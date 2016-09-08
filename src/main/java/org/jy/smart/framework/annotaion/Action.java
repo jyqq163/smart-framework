@@ -14,5 +14,11 @@ import java.lang.annotation.Target;
 @Target(ElementType.METHOD)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface Action {
+	/**
+	 * 请求对应类型与路径
+	 * 
+	 * @return
+	 */
+	String value();
 
 }
